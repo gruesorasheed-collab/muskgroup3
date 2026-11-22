@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lessons | CodeQuest COMPROG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">&lt;/&gt; CodeQuest</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="lesson.html">Lessons</a>
+      <a href="activities.html">Activities</a>
+    </nav>
+  </header>
+
+  <main class="content-section">
+    <section class="page-banner">
+      <p class="eyebrow">MODULE 01 • COMPROG</p>
+      <h1>Introduction to Programming</h1>
+      <p>Choose a lesson below. Read each topic at your own pace, then continue to the activities.</p>
+      <img class="lesson-image" src="images/python.svg" alt="Programming illustration"
+           onerror="this.style.display='none';">
+    </section>
+
+    <section class="lesson-layout">
+      <aside class="lesson-menu" aria-label="Lesson navigation">
+        <h2>Module contents</h2>
+        <button class="lesson-link active" type="button" data-lesson="lesson-1">01 · Programming Basics</button>
+        <button class="lesson-link" type="button" data-lesson="lesson-2">02 · Variables and Data Types</button>
+        <button class="lesson-link" type="button" data-lesson="lesson-3">03 · Input and Output</button>
+        <button class="lesson-link" type="button" data-lesson="lesson-4">04 · Conditional Statements</button>
+        <a class="button button-full" href="activities.html">Go to Activities →</a>
+      </aside>
+
+      <div class="lesson-content">
+        <section class="content-section lesson-panel active" id="lesson-1">
+          <p class="eyebrow">LESSON 1 OF 4</p>
+          <h2>What is computer programming?</h2>
+          <p>Computer programming is the process of writing instructions that a computer can execute to perform tasks or solve problems. A programming language provides rules for expressing these instructions.</p>
+          <p>Python is a high-level programming language known for its readable syntax. It is used in web development, automation, data analysis, artificial intelligence, and education.</p>
+          <h3>Important concepts</h3>
+          <ul>
+            <li><strong>Algorithm:</strong> A step-by-step procedure for solving a problem.</li>
+            <li><strong>Program:</strong> A set of instructions written for a computer.</li>
+            <li><strong>Syntax:</strong> The rules for writing valid code.</li>
+            <li><strong>Debugging:</strong> Finding and correcting errors in a program.</li>
+            <li><strong>Programiz:</strong> An online platform that provides free compilers and code editors for various programming languages, making it easy to learn and practice coding.</li>
+            <li><strong>Data Types:</strong> Different types of data that can be used in programming, such as integers, strings, and arrays.</li>
+          </ul>
+          <aside class="example-box">
+            <h3>Real-life example: Making a sandwich</h3>
+            <p>An algorithm might tell you to prepare bread, add a filling, place the second slice on top, and serve. A computer program also follows instructions in a logical sequence.</p>
+          </aside>
+          <div class="lesson-actions">
+            <span class="muted">Lesson 1 / 4</span>
+            <button class="button next-lesson" type="button" data-next="lesson-2">Next lesson →</button>
+          </div>
+        </section>
+
+        <section class="content-section lesson-panel" id="lesson-2" hidden>
+          <p class="eyebrow">LESSON 2 OF 4</p>
+          <h2>Variables and data types</h2>
+          <p>A variable is a named reference used to store a value in a program. In Python, you can create a variable by assigning a value to a name.</p>
+          <pre><code>student_name = "Alex"
+age = 17
+grade = 92.5
+is_enrolled = True
+
+print(student_name)
+print(age)
+print(grade)
+print(is_enrolled)</code></pre>
+          <h3>Common data types</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Data type</th><th>Purpose</th><th>Example</th></tr></thead>
+              <tbody>
+                <tr><td>str</td><td>Text</td><td>"Hello"</td></tr>
+                <tr><td>int</td><td>Whole numbers</td><td>17</td></tr>
+                <tr><td>float</td><td>Decimal numbers</td><td>92.5</td></tr>
+                <tr><td>bool</td><td>True or false values</td><td>True</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="tip">Remember: text values need quotation marks. Variable names should be meaningful. Python is case-sensitive, so <code>age</code> and <code>Age</code> are different names.</p>
+          <div class="lesson-actions">
+            <button class="button button-outline prev-lesson" type="button" data-prev="lesson-1">← Previous</button>
+            <span class="muted">Lesson 2 / 4</span>
+            <button class="button next-lesson" type="button" data-next="lesson-3">Next lesson →</button>
+          </div>
+        </section>
+
+        <section class="content-section lesson-panel" id="lesson-3" hidden>
+          <p class="eyebrow">LESSON 3 OF 4</p>
+          <h2>Input and output</h2>
+          <p>The <code>input()</code> function receives text from the user. The <code>print()</code> function displays information on screen.</p>
+          <pre><code>name = input("Enter your name: ")
+print("Welcome to Comprogramming,", name)</code></pre>
+          <aside class="example-box">
+            <h3>Sample output</h3>
+            <pre><code>Enter your name: Alex
+Welcome to Comprogramming, Alex</code></pre>
+            <p>The program asks for a name, stores the response in a variable, and then displays a greeting.</p>
+          </aside>
+          <h3>Performing calculations</h3>
+          <pre><code>first_number = int(input("First number: "))
+second_number = int(input("Second number: "))
+
+total = first_number + second_number
+print("Sum:", total)</code></pre>
+          <p>The <code>int()</code> function converts suitable text input into a whole number. Without conversion, input is normally returned as a string.</p>
+          <div class="lesson-actions">
+            <button class="button button-outline prev-lesson" type="button" data-prev="lesson-2">← Previous</button>
+            <span class="muted">Lesson 3 / 4</span>
+            <button class="button next-lesson" type="button" data-next="lesson-4">Next lesson →</button>
+          </div>
+        </section>
+
+        <section class="content-section lesson-panel" id="lesson-4" hidden>
+          <p class="eyebrow">LESSON 4 OF 4</p>
+          <h2>Conditional statements</h2>
+          <p>Conditional statements allow a program to choose different actions depending on whether a condition is true or false.</p>
+          <pre><code>score = 85
+
+if score >= 75:
+    print("Passed!")
+else:
+    print("Keep practicing!")</code></pre>
+          <p>In this example, a score of 75 or higher displays "Passed!". Otherwise, the program displays "Keep practicing!". Python uses indentation to define the code inside each branch.</p>
+          <div class="lesson-actions">
+            <button class="button button-outline prev-lesson" type="button" data-prev="lesson-3">← Previous</button>
+            <span class="muted">Lesson 4 / 4</span>
+            <a class="button" href="activities.html">Continue to Activities →</a>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="cta">
+      <h2>Ready to test what you learned?</h2>
+      <p>Continue to the activities and check your understanding.</p>
+      <a class="button" href="activities.html">Practice Now →</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>CodeQuest | COMPROG</strong></p>
+    <p>Learn the logic. Write the code. Solve the problem.</p>
+    <p><a href="index.html">Home</a> · <a href="activities.html">Activities</a></p>
+  </footer>
+
+  <script>
+    const lessonButtons = document.querySelectorAll(".lesson-link");
+    const lessonPanels = document.querySelectorAll(".lesson-panel");
+
+    function showLesson(id) {
+      const target = document.getElementById(id);
+      if (!target) return;
+
+      lessonPanels.forEach(panel => {
+        const isActive = panel.id === id;
+        panel.hidden = !isActive;
+        panel.classList.toggle("active", isActive);
+      });
+
+      lessonButtons.forEach(button => {
+        button.classList.toggle("active", button.dataset.lesson === id);
+      });
+
+      if (history.replaceState) history.replaceState(null, "", "#" + id);
+    }
+
+    lessonButtons.forEach(button => {
+      button.addEventListener("click", () => showLesson(button.dataset.lesson));
+    });
+
+    document.querySelectorAll(".next-lesson").forEach(button => {
+      button.addEventListener("click", () => showLesson(button.dataset.next));
+    });
+
+    document.querySelectorAll(".prev-lesson").forEach(button => {
+      button.addEventListener("click", () => showLesson(button.dataset.prev));
+    });
+
+    const requestedLesson = location.hash.slice(1);
+    if (requestedLesson && document.getElementById(requestedLesson)) {
+      showLesson(requestedLesson);
+    }
+  </script>
+</body>
+</html>
